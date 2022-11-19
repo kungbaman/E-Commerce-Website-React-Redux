@@ -4,7 +4,7 @@ import { FiSearch, FiShoppingBag } from "react-icons/fi";
 import { useDispatch } from "react-redux"
 import { ADD } from "../../../controller/action"
 
-export const SearchItems = ({ value, product, onSearch }) => {
+export const SearchItems = ({ value, product }) => {
 
   const dispatch = useDispatch()
   const addToCart = (e) => {
