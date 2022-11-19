@@ -357,7 +357,7 @@ export const blog = [
     id: 3,
     date: "October 27, 2021",
     title: "Perfect Quality Reasonable Price for Your",
-    category: "travle",
+    category: "travel",
     cover: "../images/blog/b3.jpg",
   },
   {

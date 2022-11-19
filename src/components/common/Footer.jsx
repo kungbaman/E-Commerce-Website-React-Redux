@@ -1,5 +1,11 @@
 import React from 'react'
 
 export const Footer = () => {
-  return <div>Footer</div>
+  return (
+    <>
+      <footer>
+        <p>Copyright &copy; Kungbaman. All right reserved</p>
+      </footer>
+    </>
+  )
 }
