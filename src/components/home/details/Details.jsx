@@ -7,12 +7,12 @@ import { ADD, DELETE, REDUCE_TO_ITEM  } from "../../../controller/action";
 
 export const Details = () => {
   const [data, setData] = useState([]);
-  const getdata = useSelector((state) => state.cartReducer.carts);
   const { id } = useParams();
+  const getdata = useSelector((state) => state.cartReducer.carts);
 
   const compare = () => {
     let compareData = getdata.filter((e) => {
-      return (e.id = id);
+      return e.id == id;
     });
     setData(compareData);
   };
@@ -81,13 +81,23 @@ export const Details = () => {
 
                   <h4>PRODUCT DETAILS</h4>
                   <ul>
+                  <li>
+                      <p> Material: Plastic, Wood</p>
+                    </li>
                     <li>
-                        <p>Material: Plastic, Wood</p>
-                        <p>Legs: Lacquered Oak And Black Painted Oak</p>
-                        <p>Dimensions And Weight: Height: 80 Cm, Weight: 5.3 Kg</p>
-                        <p>Length: 48cm</p>
-                        <p>Depth: 52 Cm</p>
-                        <p>Seat Height: 44 Cm</p>
+                      <p>Legs: Lacquered oak and black painted oak</p>
+                    </li>
+                    <li>
+                      <p>Dimensions and Weight: Height: 80 cm, Weight: 5.3 kg</p>
+                    </li>
+                    <li>
+                      <p>Length: 48cm</p>
+                    </li>
+                    <li>
+                      <p>Depth: 52 cm</p>
+                    </li>
+                    <li>
+                      <p>Seat Height: 44 cm</p>
                     </li>
                   </ul>
                 </div>
